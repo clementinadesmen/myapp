@@ -12,9 +12,9 @@ Rails.application.configure do
     password:             ENV['SECRET_KEY'],
     authentication:       'plain',
     enable_starttls_auto: true }
-    config.hosts << ENV['HOSTNAME']
+
   # Settings specified here will take precedence over those in config/application.rb.
-   
+     config.hosts << "myapp-production-cba4.up.railway.app"
   # In the development environment your application's code is reloaded any time
   # it changes. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
