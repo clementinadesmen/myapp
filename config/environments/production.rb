@@ -2,7 +2,7 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options =  config.hosts <<{ host: ENV['HOSTNAME'] }
+  config.action_mailer.default_url_options =  { host: ENV['HOSTNAME'] }
 
   # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
@@ -14,6 +14,7 @@ Rails.application.configure do
     enable_starttls_auto: true }
 
   # Settings specified here will take precedence over those in config/application.rb.
+  config.hosts << "myapp-production-cba4.up.railway.app"
 
  
 
