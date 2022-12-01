@@ -12,7 +12,7 @@ Rails.application.configure do
     password:             ENV['SECRET_KEY'],
     authentication:       'plain',
     enable_starttls_auto: true }
-   
+    config.hosts << ENV['HOSTNAME']
   # Settings specified here will take precedence over those in config/application.rb.
    
   # In the development environment your application's code is reloaded any time
