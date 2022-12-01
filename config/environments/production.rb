@@ -16,6 +16,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   config.hosts << ENV['HOSTNAME']
+  config.hosts << "myapp-production-694b.up.railway.app"
 
   # Code is not reloaded between requests.
   config.cache_classes = true
